@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="fixed w-full z-50 top-0 left-0 glass-nav transition-all duration-300">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         
-        <Link to="/" className="text-5xl font-bold text-salon-primary cursor-pointer tracking-wider font-serif">
+        <Link to="/" className="text-5xl font-bold text-salon-primary cursor-pointer tracking-wider font-serifgi">
           <u>GLOW</u><span className="text-salon-secondary"><u>SALON</u></span>
         </Link>
 
