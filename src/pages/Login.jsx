@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaFacebookF, FaGoogle, FaCut, FaEye, FaEyeSlash } from 'react-icons/fa'; 
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
+
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -29,20 +31,22 @@ const Login = () => {
           className="text-white md:w-1/2 text-center md:text-left"
         >
           <div className="flex items-center justify-center md:justify-start gap-3 mb-6">
-            <div className="p-3 bg-white/20 backdrop-blur-md rounded-full">
-              <FaCut className="text-3xl text-pink-600" />
+            <div className="p-2 bg-white/20 backdrop-blur-md rounded-full">
+              <img src={logo} 
+                    alt="Glow Salon Logo" 
+                    className="h-10 w-auto object-contain rounded-full border-2 border-black" />
             </div>
             <span className="text-xl font-semibold tracking-widest uppercase text-white-700">Beauty & Style</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold font-serif mb-4 leading-tight drop-shadow-lg">
-            GLOW<span className="text-pink-600">SALON</span>
+          <h1 className="text-5xl md:text-6xl font-bold font-serif mb-4 leading-tight drop-shadow-lg">
+            OLIVE<span className="text-black font-handwriting font-bold text-6xl inline-block scale-125 translate-y-0.5 text-black mx-1">N</span><span className="text-salon-secondary">JERRY</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-pink-100 font-medium max-w-lg drop-shadow-md leading-relaxed">
             "Where artistry meets beauty to reveal your inner glow."
           </p>
-          <h1 className="mt-4 text-pink-200/80">Crafted by specialists, just for you.</h1>
+          <h1 className="mt-4 text-pink-300">Crafted by specialists, just for you.</h1>
           
           <Link to="/" className="inline-block mt-24 text-white-900 hover:text-white transition-colors underline-offset-4 hover:underline">
             ← Back to Home

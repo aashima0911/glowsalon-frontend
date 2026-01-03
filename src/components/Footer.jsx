@@ -1,15 +1,22 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTwitter, FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
+import logo from '../assets/logo.png';
+
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 pt-16 pb-8">
-      <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-12">
+    <footer className="bg-gray-600 text-gray-300 pt-8 pb-4">
+      <div className="container mx-auto my-0 px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-12">
         
         {/* Column 1: About & Logo */}
         <div className="space-y-6">
-          <div className="text-3xl font-bold text-white font-serif tracking-wider">
-            GLOW<span className="text-salon-secondary">SALON</span>
+          <div className="flex items-center gap-3">
+            <img src={logo} 
+                  alt="Glow Salon Logo" 
+                  className="h-10 w-auto object-contain rounded-full border-2 border-black" />
+            <div className="text-3xl font-bold text-white font-serif tracking-wider">
+              <u>OLIVE</u><span className="text-black font-handwriting font-bold text-6xl inline-block scale-125 translate-y-0.5 text-black mx-1">N</span><span className="text-salon-secondary"><u>JERRY</u></span>
+            </div>
           </div>
           <p className="text-gray-400 leading-relaxed">
             Your premium destination for luxury hair care, styling, and wellness treatments. 
@@ -59,7 +66,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar - Copyright */}
-      <div className="mt-16 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+      <div className="mt-16 pt-2 border-t border-gray-800 text-center text-gray-500 text-sm">
         <p>© {new Date().getFullYear()} GlowSalon. All rights reserved.</p>
       </div>
     </footer>

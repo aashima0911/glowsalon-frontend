@@ -24,7 +24,8 @@ const Admin = () => {
       {/* --- SIDEBAR --- */}
       <aside className="w-64 bg-salon-primary text-white flex flex-col hidden md:flex">
         <div className="p-6 text-2xl font-bold font-serif tracking-wider border-b border-purple-800">
-          GLOW<span className="text-pink-300">ADMIN</span>
+          OLIVE<span className="text-black font-handwriting font-bold text-3xl inline-block scale-125 translate-y-0.5 text-black mx-1">N</span><span className="text-salon-secondary">JERRY</span>
+          <div className= "flex justify-center"><span className="text-pink-300 ">ADMIN</span></div>
         </div>
         
         <nav className="flex-grow p-4 space-y-2">

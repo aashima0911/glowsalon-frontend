@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes, FaUserCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom'; 
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -15,10 +16,17 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full z-50 top-0 left-0 glass-nav transition-all duration-300">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-0 py-4 flex justify-between items-center">
         
-        <Link to="/" className="text-5xl font-bold text-salon-primary cursor-pointer tracking-wider font-serif">
-          <u>GLOW</u><span className="text-salon-secondary"><u>SALON</u></span>
+        <Link to="/" className="flex items-center gap-3 cursor-pointer">
+          <img 
+            src={logo} 
+            alt="Glow Salon Logo" 
+            className="h-10 w-auto object-contain rounded-full border-2 border-black inline-block scale-125 translate-y-1" />
+
+          <span className="text-4xl font-bold text-salon-primary cursor-pointer tracking-wider font-serif">
+            <u>OLIVE</u><span className="text-black font-handwriting font-bold text-6xl inline-block scale-125 translate-y-0.5 text-black mx-1">N</span><span className="text-salon-secondary"><u>JERRY</u></span>
+          </span>
         </Link>
 
         {/* Desktop Menu */}

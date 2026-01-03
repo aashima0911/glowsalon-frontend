@@ -17,6 +17,7 @@ export default {
       fontFamily: {
         sans: ['Poppins', 'sans-serif'], // We will use Poppins for that modern look
         serif: ['Merriweather', 'serif'],
+        handwriting: ["'Dancing Script'", "cursive"],
       }
     },
   },
